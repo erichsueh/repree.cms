@@ -1,0 +1,55 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.RepreeHome>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+<html>
+	<head>
+	
+    	<!-- CSS -->
+    	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="/css/fanoe.css">
+    	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+		<title>@CurrentPage.Name | @CurrentPage._siteTitle</title>
+
+	
+	</head>
+	<header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-sm-12 col-md-4">
+
+          </div>
+          <div class="col-sm-12 col-md-8">
+            <nav>
+			  
+              @{ Html.RenderPartial("MainNavigation"); }
+
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div id="toggle" class="toggle">
+        <a href="#" class="cross"><span></span></a>
+      </div>
+    </header>
+	<h1>@Umbraco.Field("pageTitle")</h1>
+	<body>
+	@Umbraco.Field("bodyText")
+	</body>
+	<body>
+	@CurrentPage.GetGridHtml("content", "fanoe")
+	</body>
+	
+	<footer class="field dark">
+      <div class="container">
+        <div class="row">
+			
+		  @{ Html.RenderPartial("BottomNavigation"); }
+
+        </div>
+      </div>
+    </footer>
+</html>

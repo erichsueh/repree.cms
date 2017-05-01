@@ -1,0 +1,5 @@
+﻿ 2017-04-17 10:06:33,818 [P7452/D2/T165] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username ehsueh@repree.com from IP address ::1
+ 2017-04-17 10:06:33,818 [P7452/D2/T165] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: ehsueh@repree.com logged in from IP address ::1
+ 2017-04-17 10:11:56,245 [P7452/D2/T188] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-04-17 10:24:18,283 [P7452/D2/T164] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-04-17 10:24:18,284 [P7452/D2/T164] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
